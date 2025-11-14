@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Socio de Esquí</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registro</h1>
+        
+        <form action="/submit-form" method="POST" onsubmit="return validarTodo(event)" novalidate>
+
+            <label for="identificador">Id(Identificador):</label>
+            <input 
+                type="text" id="identificador" name="identificador" 
+                required maxlength="10" 
+                pattern="[A-Za-z]{1}[0-9]{8}[A-Za-z]{1}"
+                placeholder="A12345678B" 
+                title="Debe tener 1 letra, 8 cifras y 1 letra."
+            >
+            <span id="error_identificador" class="error"></span>
+
+            <label for="nombre_apellidos">Nombre y Apellidos:</label>
+            <input 
+                type="text" id="nombre_apellidos" name="nombre_apellidos" 
+                required maxlength="50"
+                title="El nombre y apellidos son obligatorios."
+            >
+            <span id="error_nombre_apellidos" class="error"></span>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento (dd/mm/yyyy):</label>
+            <input 
+                type="text" id="fecha_nacimiento" name="fecha_nacimiento" 
+                required 
+                pattern="^\d{2}\/\d{2}\/\d{4}$" 
+                placeholder="30/11/1996" 
+                title="Formato requerido: dd/mm/yyyy."
+            >
+            <span id="error_fecha_nacimiento" class="error"></span>
+
+            <label for="email">Correo Electrónico:</label>
+            <input 
+                type="email" id="email" name="email" 
+                placeholder="ejemplo@ejemplo.com" 
+                title="Debe tener un formato de correo válido."
+            >
+            <span id="error_email" class="error"></span>
+
+            <label for="telefono">Teléfono:</label>
+            <input 
+                type="tel" id="telefono" name="telefono"
+                pattern="^\+\d{2,3}-\d{9}$" 
+                placeholder="+34-123456789" 
+                title="Formato: +XX-XXXXXXXXX o +XXX-XXXXXXXXX."
+            >
+            <span id="error_telefono" class="error"></span>
+
+            <label for="edad_categoria">Categoría de Edad:</label>
+            <select id="edad_categoria" name="edad_categoria" required title="Debe seleccionar una categoría de edad.">
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="nino">Niño</option>
+                <option value="adulto">Adulto</option>
+                <option value="jubilado">Jubilado</option>
+            </select>
+            <span id="error_edad_categoria" class="error"></span>
+
+            <hr>
+
+            <div>
+                <input type="checkbox" id="club_ski" name="club_ski" onchange="toggleClubFields()">
+                <label for="club_ski" style="display: inline;">¿Pertenece a un Club de Esquí?</label>
+            </div>
+
+            <div id="club_adicional_fields" class="club-adicional">
+                <h3>Información Adicional del Club</h3>
+                
+                <label for="nombre_club">Nombre del Club:</label>
+                <input type="text" id="nombre_club" name="nombre_club" title="El nombre del club es obligatorio si se marca la casilla.">
+                <span id="error_nombre_club" class="error"></span>
+
+                <label for="num_licencia">Número de Licencia:</label>
+                <input type="text" id="num_licencia" name="num_licencia" title="El número de licencia es obligatorio si se marca la casilla.">
+                <span id="error_num_licencia" class="error"></span>
+            </div>
+
+            <button type="submit" style="margin-top: 20px; padding: 10px 20px; cursor: pointer;">Enviar Registro</button>
+
+        </form>
+    </div>
+    
+    <script src="main.js"></script> 
+</body>
+</html>

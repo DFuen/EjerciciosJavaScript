@@ -1,0 +1,37 @@
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h1{
+    text-align: center;
+    color: #333;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], select, input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.club-adicional{
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+}
