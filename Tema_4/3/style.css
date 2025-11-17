@@ -1,0 +1,22 @@
+body{
+    justify-items: center;
+}
+.contenedor{
+    padding: 2em;
+    width: 75vw;
+    height: 75vh;
+    border: 1px solid black;
+}
+.contenedor div{
+    display:flexbox;
+    width: 30em;
+    margin-bottom: 1em;
+    margin: 1em;
+}
+.contenedor label{
+    color: blue;
+}
+.contenedor span{
+    color: red;
+    text-transform: uppercase;
+}
