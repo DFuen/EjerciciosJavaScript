@@ -1,22 +1,43 @@
 body{
     justify-items: center;
+    background-color: beige;
 }
 .contenedor{
     padding: 2em;
-    width: 75vw;
+    width: 30vw;
     height: 75vh;
-    border: 1px solid black;
+    border: 2px solid black;
+    background-color: aliceblue;
 }
 .contenedor div{
-    display:flexbox;
+    display:grid;
     width: 30em;
     margin-bottom: 1em;
     margin: 1em;
+    text-align: center;
+
 }
-.contenedor label{
-    color: blue;
+
+input:hover{
+    border: 1px solid orange;
 }
-.contenedor span{
-    color: red;
+label{
+    color: rgb(54, 154, 194);
+    font-size: 21px;
     text-transform: uppercase;
+    text-shadow: 0.5px 0.5px;
+    margin-bottom: 0.3em;
+}
+button{
+    background-color: rgb(0, 0, 0);
+    margin-top: 0.5em;
+    color: white;
+    border:2px solid rgb(49, 149, 231);
+    border-radius: 20px;
+}
+.error{
+    color: red;
+}
+.correcto{
+    color: green;
 }
