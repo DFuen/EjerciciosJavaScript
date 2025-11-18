@@ -11,13 +11,12 @@
     <div class="container">
         <h1>Registro</h1>
         
-        <form action="/submit-form" method="POST" onsubmit="return validarTodo(event)" novalidate>
+        <form>
 
             <label for="identificador">Id(Identificador):</label>
             <input 
                 type="text" id="identificador" name="identificador" 
                 required maxlength="10" 
-                pattern="[A-Za-z]{1}[0-9]{8}[A-Za-z]{1}"
                 placeholder="A12345678B" 
                 title="Debe tener 1 letra, 8 cifras y 1 letra."
             >
@@ -35,7 +34,7 @@
             <input 
                 type="text" id="fecha_nacimiento" name="fecha_nacimiento" 
                 required 
-                pattern="^\d{2}\/\d{2}\/\d{4}$" 
+                pattern="^$" 
                 placeholder="30/11/1996" 
                 title="Formato requerido: dd/mm/yyyy."
             >
@@ -86,7 +85,7 @@
                 <span id="error_num_licencia" class="error"></span>
             </div>
 
-            <button type="submit" style="margin-top: 20px; padding: 10px 20px; cursor: pointer;">Enviar Registro</button>
+            <button type="button" id="comprobar">Enviar Registro</button>
 
         </form>
     </div>

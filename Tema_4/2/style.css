@@ -35,3 +35,8 @@ input[type="text"], input[type="email"], select, input[type="tel"] {
     margin-top: 10px;
     display: none;
 }
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
