@@ -40,3 +40,15 @@ button{
     padding: 10px 20px;
     cursor: pointer;
 }
+.volver{
+    width: 100vw;
+    height: 5vh;
+    align-items: center;
+}
+a{
+    margin-left: 45%;
+    padding: 0.5vh;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}

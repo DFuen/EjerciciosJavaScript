@@ -26,20 +26,30 @@ function comprobaciones(){
     RegexFechaNacimiento=/^\d{2}\/\d{2}\/\d{4}$/;
     fechaNacimiento=document.getElementById("fecha_nacimiento");
     
-    if(!RegexNombreApellidos.test(fechaNacimiento.value)){
+    if(!RegexFechaNacimiento.test(fechaNacimiento.value)){
         document.getElementById("error_fecha_nacimiento").innerHTML="Error";
     }
     else{
         document.getElementById("error_fecha_nacimiento").innerHTML="Bien";
     }
     RegexTelefono=/^\+\d{2,3}-\d{9}$/;
-    telefono=document.getElementById("fecha_nacimiento");
+    telefono=document.getElementById("telefono");
     
-    if(!RegexNombreApellidos.test(telefono.value)){
+    if(! RegexTelefono.test(telefono.value)){
         document.getElementById("error_telefono").innerHTML="Error";
     }
     else{
         document.getElementById("error_telefono").innerHTML="Bien";
+    }
+
+    RegexEdadCategoria=/^(nino|adulto|jubilado)$/;
+    telefono=document.getElementById("edad_categoria");
+    
+    if(!RegexEdadCategoria.test(edad_categoria.value)){
+        document.getElementById("error_edad_categoria").innerHTML="Error";
+    }
+    else{
+        document.getElementById("error_edad_categoria").innerHTML="Bien";
     }
     
 }
