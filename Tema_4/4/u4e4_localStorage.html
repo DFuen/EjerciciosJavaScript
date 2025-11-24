@@ -13,7 +13,7 @@
         </div>
         <div class="count2">
             <p lass="marcador" id="marcador2">0</p>
-            <button type="reset" class="boton-marcador">RESET</button>
+            <button type="reset" class="boton-marcador" id="reset">RESET</button>
         </div>
     </div>
     <div class="container">
@@ -27,15 +27,13 @@
                 placeholder="A12345678B" 
                 title="Debe tener 1 letra, 8 cifras y 1 letra."
             >
-            <span id="error_identificador" class="error"></span>
-
+ 
             <label for="nombre_apellidos">Nombre y Apellidos:</label>
             <input 
                 type="text" id="nombre_apellidos" name="nombre_apellidos" 
                 required maxlength="50"
                 title="El nombre y apellidos son obligatorios."
             >
-            <span id="error_nombre_apellidos" class="error"></span>
 
             <label for="fecha_nacimiento">Fecha de Nacimiento (dd/mm/yyyy):</label>
             <input 
@@ -45,7 +43,6 @@
                 placeholder="30/11/1996" 
                 title="Formato requerido: dd/mm/yyyy."
             >
-            <span id="error_fecha_nacimiento" class="error"></span>
 
             <label for="email">Correo Electrónico:</label>
             <input 
@@ -53,7 +50,6 @@
                 placeholder="ejemplo@ejemplo.com" 
                 title="Debe tener un formato de correo válido."
             >
-            <span id="error_email" class="error"></span>
 
             <label for="telefono">Teléfono:</label>
             <input 
@@ -62,7 +58,6 @@
                 placeholder="+34-123456789" 
                 title="Formato: +XX-XXXXXXXXX o +XXX-XXXXXXXXX."
             >
-            <span id="error_telefono" class="error"></span>
 
             <label for="edad_categoria">Categoría de Edad:</label>
             <select id="edad_categoria" name="edad_categoria" required title="Debe seleccionar una categoría de edad.">
@@ -71,7 +66,7 @@
                 <option value="adulto">Adulto</option>
                 <option value="jubilado">Jubilado</option>
             </select>
-            <span id="error_edad_categoria" class="error"></span>
+            <span id="mensaje" class="error"></span>
 
             <hr>
 
@@ -85,11 +80,9 @@
                 
                 <label for="nombre_club">Nombre del Club:</label>
                 <input type="text" id="nombre_club" name="nombre_club" title="El nombre del club es obligatorio si se marca la casilla.">
-                <span id="error_nombre_club" class="error"></span>
 
                 <label for="num_licencia">Número de Licencia:</label>
                 <input type="text" id="num_licencia" name="num_licencia" title="El número de licencia es obligatorio si se marca la casilla.">
-                <span id="error_num_licencia" class="error"></span>
             </div>
             <button type="button" id="comprobar">Enviar Registro</button>
         </form>
@@ -98,5 +91,7 @@
         <a href="../index.html">VOLVER MENU</a>
     </div>
     <script src="main.js"></script> 
+    <script src="contadores.js"></script>
+    <script src="mostrar.js"></script>
 </body>
 </html>

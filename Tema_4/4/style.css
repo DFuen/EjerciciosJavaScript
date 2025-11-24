@@ -51,7 +51,7 @@ a{
     color: white;
     text-decoration: none;
 }
-.contenedor-comprobación label, .contenedor-comprobación inp{
+.contenedor-comprobación label, .contenedor-comprobación input{
     display: inline-block;
 }
 
@@ -80,4 +80,9 @@ a{
 }
 .marcador{
     font-size: 16px;
+}
+#reset{
+    width: 80%;
+    font-size:50%;
+    text-align: center;
 }
