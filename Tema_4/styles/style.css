@@ -2,22 +2,30 @@
     margin: 0;
     padding: 0;
 }
+body{
+    position: relative;
+    justify-items: center;
+}
 .menu{
+    position: relative;
+    border-radius: 35px;
+    justify-content: center;
     padding: 1vw;
     width: 80vw;
-    height: 10vh;
-    display: inline-block;
-    background-color: rgb(237, 250, 50);
-    border-right: 1px solid black;
+    height: 25%;
+    display: grid;
+    background-color: rgb(211, 212, 191);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.486);
 }
 h1{
+    text-align: center;
     margin-bottom: 2vh;
 }
 a{
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 
 
     border: 1px solid black;

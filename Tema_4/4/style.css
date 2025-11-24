@@ -33,10 +33,9 @@ input[type="text"], input[type="email"], select, input[type="tel"] {
 .club-adicional{
     padding: 10px;
     margin-top: 10px;
-    display: none;
+    display: none; /*SE OCULTA INICIALMENTE*/
 }
 button{
-    margin-top: 20px;
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -52,6 +51,33 @@ a{
     color: white;
     text-decoration: none;
 }
-.club-ski{
-    display: inline;
+.contenedor-comprobación label, .contenedor-comprobación inp{
+    display: inline-block;
+}
+
+/*MARCADORES DE VISITAS*/
+
+.head{
+    margin: 5vw;
+}
+.count1{
+    float:left;
+    align-content: center;
+}
+.count2{
+    float:right;
+}
+.count2 button{
+    height: 1vh;
+    font-size: 8px;
+}
+.count1, .count2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 5vw;
+    height: 9vh;
+}
+.marcador{
+    font-size: 16px;
 }

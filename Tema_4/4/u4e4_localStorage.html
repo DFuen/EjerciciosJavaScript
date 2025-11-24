@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="head">
+        <div class="count1">
+            <p class="marcador" id="marcador1">0</p>
+        </div>
+        <div class="count2">
+            <p lass="marcador" id="marcador2">0</p>
+            <button type="reset" class="boton-marcador">RESET</button>
+        </div>
+    </div>
     <div class="container">
         <h1>Registro</h1>
         
@@ -67,12 +75,12 @@
 
             <hr>
 
-            <div>
-                <input type="checkbox" id="club_ski" name="club_ski" onchange="toggleClubFields()">
-                <label for="club_ski" style="display: inline;">¿Pertenece a un Club de Esquí?</label>
+            <div class="contenedor-comprobación">
+                <label for="club_ski">¿Pertenece a un Club de Esquí?</label>
+                <input type="checkbox" id="club_ski" name="club_ski" onchange="mostrarExtra()">
             </div>
 
-            <div id="club_adicional_fields" class="club-adicional">
+            <div id="club_adicional_contenedor" class="club-adicional">
                 <h3>Información Adicional del Club</h3>
                 
                 <label for="nombre_club">Nombre del Club:</label>
