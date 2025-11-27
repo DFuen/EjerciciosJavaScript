@@ -31,7 +31,7 @@ function comprNomD(){
     limpiarB();
     for (let i = 0;i<nombreD.length;i++){
         nombreD[i].style.border = "5px solid red";
-        nombrePj[i].style.display ="block";
+        nombreD[i].querySelector('.nombre').style.display = "block";
     }
 }
 
@@ -39,7 +39,7 @@ function comprYonko(){
     limpiarB();
     for (let i = 0;i<yonkou.length;i++){
         yonkou[i].style.border = "5px solid green"
-        nombrePj[i].style.display ="block";
+        yonkou[i].querySelector('.nombre').style.display = "block";
     }
 }
 
@@ -49,7 +49,9 @@ function limpiarB(){
     for(let coleccion of todasColecciones){
         for(let i = 0; i<coleccion.length; i++){
             coleccion[i].style.border="none";
-            nombrePj[i].style.display="none";
         }
+    }
+    for(let i = 0; i<nombrePj.length; i++){
+        nombrePj[i].style.display="none";
     }
 }
