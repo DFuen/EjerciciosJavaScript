@@ -21,7 +21,7 @@ body{
     box-shadow: 3px 3px rgba(98, 131, 67, 0.589);
     background-color: rgb(78, 192, 139);
     width: 20vw;
-    height: 45vh;
+    height: 50vh;
     align-content: center;
 }
 .contentTarjeta h2{
@@ -45,12 +45,12 @@ label{
     font-weight: bold;
     text-shadow: 1px 1px black;
 }
-button[type="submit"]{
+button{
     margin-top: 2vh;
     background-color: black;
     color: white;
 }
-button[type="submit"]:hover{
+button:hover{
         background-color: rgb(78, 77, 77);
 }
 input[type="text"]:hover, input[type="text"]:focus{
@@ -63,4 +63,37 @@ input[type="text"]:hover, input[type="text"]:focus{
     width: 65%;
     height: 80%;
     background-color: rgba(255, 255, 255, 0.486);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*ESTILOS TARJETAS*/
+
+#content-imagen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagenes{
+    background-color: black;
+    color: white;
+    margin: 1vw;
+    width: 17vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column
+}
+.imagenes span {
+    height: 10%; 
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+
+}
+img{
+    margin: 5%;
+    width: 90%;
+    height: 75%;
+    object-position: top;
+    object-fit: cover;
 }
