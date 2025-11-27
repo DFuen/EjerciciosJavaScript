@@ -19,7 +19,7 @@
     <div class="container">
         <h1>Registro</h1>
         
-        <form>
+        <form id="formulario">
             <label for="identificador">Id(Identificador):</label>
             <input 
                 type="text" id="identificador" name="identificador" 
@@ -39,7 +39,6 @@
             <input 
                 type="text" id="fecha_nacimiento" name="fecha_nacimiento" 
                 required 
-                pattern="^$" 
                 placeholder="30/11/1996" 
                 title="Formato requerido: dd/mm/yyyy."
             >
@@ -54,7 +53,6 @@
             <label for="telefono">Teléfono:</label>
             <input 
                 type="tel" id="telefono" name="telefono"
-                pattern="^$" 
                 placeholder="+34-123456789" 
                 title="Formato: +XX-XXXXXXXXX o +XXX-XXXXXXXXX."
             >

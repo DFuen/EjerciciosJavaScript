@@ -1,4 +1,5 @@
 document.getElementById("comprobar").addEventListener("click",comprobaciones);
+var formuraio = document.getElementById("formulario");
 
 var correcto=false;
 
@@ -43,6 +44,10 @@ function comprobaciones(){
         contadoresski()
     }
 
+}
+/*Resetear formulario*/
+const limpiarFormulario=()=>{
+    formuraio.reset();
 }
 
 

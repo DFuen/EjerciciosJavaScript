@@ -6,23 +6,40 @@ body{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    justify-items: center;
-    align-content: center;
-    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(112, 55, 15);
 }
 #content-imagen{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .imagenes{
     background-color: black;
     color: white;
-    margin: 2%;
+    margin: 1vw;
+    width: 17vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column
+}
+.imagenes span {
+    height: 10%; 
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    display: none;
+
 }
 img{
     margin: 5%;
     width: 90%;
     height: 75%;
+    object-position: top;
+    object-fit: cover;
 }
 .content-botones button{
     width: 100%;
@@ -30,4 +47,8 @@ img{
     font-size: 18px;
     background-color: black;
     color: white;
+}
+.content-botones button:hover{
+    background-color: rgb(49, 48, 48);
+    color: rgb(26, 184, 12);
 }

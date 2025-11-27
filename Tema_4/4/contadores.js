@@ -16,6 +16,7 @@ const contadores=()=>{
     contador++;
     localStorage.setItem(fechaHoy+" normal",contador);
     contador1.innerHTML=contador;
+    limpiarFormulario();
 }
 
 const contadoresski=()=>{
@@ -23,6 +24,7 @@ const contadoresski=()=>{
 
         localStorage.setItem(fechaHoy+" ski",contadorski);
         contador2.innerHTML=contadorski;
+        limpiarFormulario();
 }
 
 function limpiarreg(){
