@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*VER TARJETAS*/
+
+.content{
+    position: absolute;
+    background-color: rgb(25, 178, 224);
+    width: 100vw;
+    height: 100vh;
+}
+.contentTarjeta,#tarjetasCreadas{
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+/*ESTILO PARA EL FORMULARIO DE CREACION*/
+.contentTarjeta{
+    border: 4px solid rgb(0, 63, 26);
+    box-shadow: 3px 3px rgba(98, 131, 67, 0.589);
+    background-color: rgb(78, 192, 139);
+    width: 20vw;
+    height: 45vh;
+    align-content: center;
+}
+.contentTarjeta h2{
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+.contentTarjeta img{
+    margin-left: 38%;
+    width: 20%;
+    height: 20%;
+}
+form{
+    width: 100%;
+    display:grid;
+}
+label{
+    margin: 0.3vw;
+    color:white;
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+button[type="submit"]{
+    margin-top: 2vh;
+    background-color: black;
+    color: white;
+}
+button[type="submit"]:hover{
+        background-color: rgb(78, 77, 77);
+}
+input[type="text"]:hover, input[type="text"]:focus{
+    background-color: rgb(170, 196, 22);
+}
+
+/*CONTENEDOR DE TARJETAS CREADAS POR JAVASCRIPT*/
+#tarjetasCreadas{
+    border: 2px solid black;
+    width: 65%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.486);
+}

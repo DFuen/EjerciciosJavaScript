@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wiki</title>
+</head>
+<body>
+    <div class="content">
+        <div class="contentTarjeta">
+            <h2>FICHA PERSONAJE</h2>
+            <img src="img/iconoPersonaje.png">
+            <form>
+                <label>TITULO</label>
+                    <input type="text" id="titulo">
+                <label>IMAGEN</label>
+                    <input type="file"id="imagen">
+                <label>URL</label>
+                    <input type="text" id="url">
+                <label>TEXTO</label>
+                    <input type="text" id="texto">
+                <button type="submit" id="crear">CREAR</button>
+            </form>
+        </div>
+        <div id="tarjetasCreadas"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
